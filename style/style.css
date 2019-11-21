@@ -1,0 +1,353 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../fonts/HelveticaNeue.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("../fonts/Helvetica Neu Bold.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueLight;
+  src: url("../fonts/HelveticaNeue Light.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueMedium;
+  src: url("../fonts/HelveticaNeue Medium.ttf");
+}
+
+*, ::after, ::before {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: HelveticaNeueMedium;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header img {
+  padding: 0px 40px;
+  height: 65px;
+}
+
+.container .header .signin-btn {
+  padding: 7px 17px 7px 17px;
+  margin: 0px 50px;
+  font-family: HelveticaNeueBold;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: red;
+}
+
+.container .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .section1 {
+  width: 100%;
+  padding: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .section1 hr {
+  height: 7px;
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.container .content .section1 img {
+  width: 1920px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.container .content .section1 .hero-text {
+  text-align: center;
+  margin: 165px 0px 35px 0px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.container .content .section1 .progress-container {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .section1 .progress-container .progress-text {
+  width: 100%;
+  height: 70px;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.container .content .section1 .progress-container .progress-text .day {
+  font-weight: 600;
+  color: #00d65f;
+  position: absolute;
+  left: 0;
+}
+
+.container .content .section1 .progress-container .progress-text .col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .content .section1 .progress-container .progress-text .col1 .text1 {
+  padding: 2px 0px;
+  font-size: 26px;
+  color: #8C8C8C;
+}
+
+.container .content .section1 .progress-container .progress-text .col2 {
+  position: absolute;
+  left: 85%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .content .section1 .progress-container .progress-bar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  margin: 15px 0px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #00d65f), color-stop(50%, #308234), color-stop(50%, #3f3f3f), color-stop(85%, #3f3f3f), to(rgba(63, 63, 63, 0)));
+  background: linear-gradient(to right, #00d65f 10%, #308234 50%, #3f3f3f 50%, #3f3f3f 85%, rgba(63, 63, 63, 0) 100%);
+  position: relative;
+}
+
+.container .content .section1 .progress-container .progress-bar .circle::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  border-radius: 20px;
+}
+
+.container .content .section1 .progress-container .progress-bar .circle::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 85%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  border-radius: 20px;
+}
+
+.container .content .section1 .progress-container .reminder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  margin: 15px 0px;
+  position: relative;
+}
+
+.container .content .section1 .progress-container .reminder .mail-icon {
+  padding: 0px 15px;
+  height: 24px;
+}
+
+.container .content .section1 .progress-container .reminder::before {
+  content: '';
+  width: 8px;
+  height: 70px;
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+.container .content .section1 .progress-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.container .content .section1 .progress-footer-container .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0px;
+}
+
+.container .content .section1 .progress-footer-container .button-container .try-btn {
+  width: 360px;
+  height: 70px;
+  font-size: 30px;
+  margin: 7px 0px;
+  font-family: HelveticaNeueBold;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: red;
+}
+
+.container .content .section1 .progress-footer-container .button-container .why-btn {
+  width: 360px;
+  height: 70px;
+  font-size: 30px;
+  margin: 7px 0px;
+  font-family: HelveticaNeueBold;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */

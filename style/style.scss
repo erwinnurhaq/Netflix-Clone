@@ -1,0 +1,214 @@
+@import "./fontfamily";
+
+@mixin flex($direction, $justifycontent, $alignitems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+  }
+
+*, ::after, ::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: HelveticaNeueMedium;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    @include flex(column,center,center);
+
+    .header{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100px;
+        @include flex(row,space-between,center);
+        img{
+            padding: 0px 40px;
+            height: 65px;
+        }
+        .signin-btn{
+            padding: 7px 17px 7px 17px;
+            margin: 0px 50px;
+            font-family: HelveticaNeueBold;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: red;
+        }
+    }
+
+    .content{
+        width: 100%;
+        @include flex(column,center,center);
+
+        .section1{
+            width: 100%;
+            padding: 0px 50px;
+            @include flex(column,center,center);
+            hr{
+                height: 7px;
+                width: 100%;
+                border: none;
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+            img{
+                width: 1920px;
+                object-fit: cover;
+                position: absolute;
+                top:0;
+                z-index: -1;
+            }
+            .hero-text{
+                text-align: center;
+                margin: 165px 0px 35px 0px;
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 55px;
+            }
+            .progress-container{
+                width: 100%;
+                max-width: 1100px;
+                position: relative;
+                @include flex(column,center,center);
+                .progress-text{
+                    width: 100%;
+                    height: 70px;
+                    font-size: 26px;
+                    display: flex;
+                    align-items: flex-end;
+                    position: relative;
+                    .day{
+                        font-weight: 600;
+                        color: #00d65f;
+                        position: absolute;
+                        left: 0;
+                    }
+                    .col1{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        .text1{
+                            padding: 2px 0px;
+                            font-size: 26px;
+                            color: #8C8C8C;
+                        }
+                    }
+                    .col2{
+                        position: absolute;
+                        left: 85%;
+                        transform: translateX(-50%);
+                    }
+                    
+                }
+                .progress-bar{
+                    align-self: center;
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin: 15px 0px;
+                    background: linear-gradient(to right, #00d65f 10%, #308234 50%, #3f3f3f 50%, #3f3f3f 85%, rgba(63, 63, 63, 0) 100%);
+                    position: relative;
+                    .circle{
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top:0;
+                            left:50%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            border-radius: 20px;
+                        }
+                        &::after{
+                            content: '';
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top:0;
+                            left: 85%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+                .reminder{
+                    @include flex(row,center,center);
+                    font-size: 24px;
+                    margin: 15px 0px;
+                    position: relative;
+                    .mail-icon{
+                        padding: 0px 15px;
+                        height: 24px;
+                    }
+                    &::before{
+                        content: '';
+                        width: 8px;
+                        height: 70px;
+                        position: absolute;
+                        left: 25px;
+                        bottom: 30px;
+                        background-color: white;
+                        border: 3px solid black;
+                    }
+                }
+            }
+
+            .progress-footer-container{
+                @include flex(column,center,center);
+                margin: 40px 0px;
+                font-size: 24px;
+                text-align: center;
+                .button-container{
+                    @include flex(column,center,center);
+                    margin: 30px 0px;
+                    .try-btn{
+                        width: 360px;
+                        height: 70px;
+                        font-size: 30px;
+                        margin: 7px 0px;
+                        font-family: HelveticaNeueBold;
+                        border: none;
+                        border-radius: 3px;
+                        color: white;
+                        background-color: red;
+                    }
+                    .why-btn{
+                        width: 360px;
+                        height: 70px;
+                        font-size: 30px;
+                        margin: 7px 0px;
+                        font-family: HelveticaNeueBold;
+                        border: 2px solid white;
+                        border-radius: 3px;
+                        color: white;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer{
+
+    }
+
+}
